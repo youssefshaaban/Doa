@@ -2,13 +2,10 @@ package com.example.doaa.test
 
 import android.content.Context
 import android.content.Intent
-import android.media.AudioManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
 import com.example.doaa.App
-import com.example.doaa.BaseActivity
-import com.example.doaa.DonationsAndCharitiesActivity
+import com.example.doaa.base.BaseActivity
 import com.example.doaa.R
 import com.example.doaa.databinding.ActivityQuranTextBinding
 import com.tazkiyatech.quran.sdk.database.QuranDatabase

@@ -6,14 +6,11 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.widget.SeekBar
 import androidx.annotation.RequiresApi
-import com.example.doaa.BaseActivity
+import com.example.doaa.base.BaseActivity
 import com.example.doaa.R
-import com.example.doaa.databinding.ActivityDisplayBinding
 import com.example.doaa.databinding.ActivityDisplayDuaBinding
-import com.example.doaa.enum.VisitGravits
 
 
 class DisplayDuaActivity : BaseActivity<ActivityDisplayDuaBinding>() {

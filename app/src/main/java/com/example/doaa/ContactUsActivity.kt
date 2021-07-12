@@ -2,8 +2,8 @@ package com.example.doaa
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.doaa.base.BaseActivity
 import com.example.doaa.databinding.ActivityContactUsBinding
 
 class ContactUsActivity : BaseActivity<ActivityContactUsBinding>() {

@@ -11,11 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Doaa">
         <activity android:name=".test.TestAppActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".test.QuranTextActivity"></activity>
         <activity android:name=".test.QuranImageActivity">
@@ -28,7 +24,11 @@
         <activity android:name=".visit_graves.VisitTheGravesActivity" />
         <activity android:name=".second_activity.HomeActivity" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

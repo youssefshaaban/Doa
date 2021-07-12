@@ -2,17 +2,15 @@ package com.example.doaa.visit_graves
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.doaa.BaseActivity
+import com.example.doaa.base.BaseActivity
 import com.example.doaa.ContactUsActivity
 import com.example.doaa.R
 import com.example.doaa.data.Visit
 import com.example.doaa.databinding.ActivityVisitTheGravesBinding
 import com.example.doaa.display.DisplayQuranActivity
 import com.example.doaa.enum.VisitGravits
-import com.example.doaa.second_activity.HomeActivity
 
 class VisitTheGravesActivity : BaseActivity<ActivityVisitTheGravesBinding>() {
     lateinit var binding: ActivityVisitTheGravesBinding
@@ -48,7 +46,7 @@ class VisitTheGravesActivity : BaseActivity<ActivityVisitTheGravesBinding>() {
         val item=visit[i]
         when(item.type){
             1->startActivity(DisplayQuranActivity.getIntent(this).putExtra("key",item.visitGravit.name))
-            2->startActivity(DisplayQuranActivity.getIntent(this).putExtra("key",item.visitGravit))
+            2->startActivity(DisplayQuranActivity.getIntent(this).putExtra("key",item.visitGravit.name))
         }
     }
 

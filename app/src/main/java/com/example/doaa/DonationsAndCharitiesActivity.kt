@@ -3,6 +3,7 @@ package com.example.doaa
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import com.example.doaa.base.BaseActivity
 import com.example.doaa.databinding.ActivityDonationsAndCharitiesBinding
 
 class DonationsAndCharitiesActivity : BaseActivity<ActivityDonationsAndCharitiesBinding>() {
