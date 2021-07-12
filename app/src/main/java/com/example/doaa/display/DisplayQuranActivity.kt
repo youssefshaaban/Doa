@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings.Global.putString
 import androidx.annotation.RequiresApi
 import com.example.doaa.App
 import com.example.doaa.ControlMediaFragment
@@ -12,14 +13,23 @@ import com.example.doaa.R
 import com.example.doaa.databinding.ActivityDisplayBinding
 import com.example.doaa.enum.VisitGravits
 import com.tazkiyatech.quran.sdk.database.QuranDatabase
+import java.util.Collections.emptyList
 
 
 class DisplayQuranActivity : BaseActivity<ActivityDisplayBinding>() {
     lateinit var binding: ActivityDisplayBinding
     lateinit var visitGravits: VisitGravits
     val list:List<Int> by lazy {
-        listOf(R.drawable.first,R.drawable.second)
+        getListOfResourcse()
     }
+
+    private fun getListOfResourcse():List<Int>? {
+        when(visitGravits){
+            VisitGravits.ALAQDAR->{return null}
+        }
+        return emptyList()
+    }
+
     @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
