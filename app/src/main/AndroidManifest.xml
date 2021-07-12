@@ -10,13 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Doaa">
-        <activity android:name=".test.TestAppActivity">
-
-        </activity>
-        <activity android:name=".test.QuranTextActivity"></activity>
-        <activity android:name=".test.QuranImageActivity">
-
-        </activity>
         <activity android:name=".display.DisplayQuranActivity" />
         <activity android:name=".display.DisplayDuaActivity" />
         <activity android:name=".DonationsAndCharitiesActivity" />
